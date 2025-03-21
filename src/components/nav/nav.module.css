@@ -1,0 +1,124 @@
+.nav {
+    background-color: var(--fondo-oscuro);
+    font-family: "Lora", serif;
+    font-weight: 400;
+    position: fixed;
+    top: 0;
+    width: 4rem;
+    height: 100vh;
+    border-right: 2px var(--fuente-claro) solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo{
+    padding: 8px;
+}
+
+.containerList{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    height: 80%;
+    justify-content: space-around;
+}
+
+.sub {
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    background: none;
+    position: relative;
+    padding-bottom: 0.3em;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex;
+}
+
+.sub a{
+    align-self: center;
+}
+
+.sub:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 30%;
+    width: 2px;
+    transform: scaleY(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
+}
+
+.sub:hover:before {
+    transform: scaleY(1);
+    transform-origin: bottom left;
+}
+
+@media (max-width: 500px) {
+    .nav{
+        height: 4rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 2px var(--fuente-claro) solid;
+        border-right: 0;
+        z-index: 100;
+    }
+
+    .containerList{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        padding: 0;
+        gap: 25px;
+        margin-right: 1rem;
+    }
+
+    .sub{
+        writing-mode: initial;
+        transform:none;
+        font-size: 1rem;
+        padding-bottom: 0;
+
+    }
+
+    .logo{
+        padding: 2px;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    .sub:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        bottom: 25%;
+        left: 0;
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        background: currentColor;
+        transition: transform 0.25s ease-out;
+    }
+    
+    .sub:hover:before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+}
+
+/* @media (max-width: 500px){
+    .nav{
+        height: 4rem;
+    }
+} */
+

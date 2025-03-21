@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+  --fuente-claro: #FFF6EE;
+  --fuente-verde: #68FF6D;
+  --fondo-oscuro: #262628;
+}
+
+body{
+  background-color: var(--fondo-oscuro);
+  color: var(--fuente-claro);
+}
+
+
