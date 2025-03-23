@@ -6,8 +6,9 @@ function Project() {
     return (
         <section className={style.container}>
             <h1 className={style.titulo}>Proy<span>ectos.</span> </h1>
+            <p className={style.subti}>(click en el icono del proyecto para saber mas).</p>
 
-            <section>
+            <section className={style.containerCard}>
                 {proyectos.map((proyecto, index) => {
                     return (
                         <div key={index} className={style.card}>

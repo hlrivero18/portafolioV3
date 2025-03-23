@@ -1,6 +1,27 @@
 .container {
     margin-left: 4rem;
-    padding: 3rem;
+    padding: 1rem;
+}
+
+.marco{
+    max-width: 30rem;
+    border: 2px solid var(--fuente-verde);
+    border-radius: 10px;
+}
+
+.marco img{
+    border-radius: 10px;
+}
+
+.certificados{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    place-items: center;
+}
+
+.certificados svg{
+    font-size: 4rem;
+    cursor: pointer;
 }
 
 .logo {
@@ -18,17 +39,10 @@
     font-size: 4rem;
     text-align: center;
     margin-bottom: 2rem;
-    line-height: 1rem;
 }
 
 .titulo span {
     color: var(--fuente-verde);
-}
-
-.subti {
-    font-family: "Roboto Mono", serif;
-    color: var(--fuente-verde);
-    text-align: center;
 }
 
 .card {
@@ -74,7 +88,6 @@
 @media (max-width: 500px) {
     .titulo{
         margin-bottom: 0;
-        line-height: 5rem;
     }
     .container{
         margin: 0;

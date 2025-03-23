@@ -1,7 +1,7 @@
 import style from "./about.module.css"
-import { SiJavascript, SiExpress, SiPython, SiMongodb, SiSequelize } from "react-icons/si";
+import { SiJavascript, SiExpress, SiPython, SiMongodb, SiSequelize, SiTypescript } from "react-icons/si";
 import { IoLogoHtml5, IoLogoReact } from "react-icons/io5";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaCss3Alt, FaGit } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { BiLogoPostgresql, BiLogoJava } from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
@@ -20,12 +20,12 @@ function About() {
             </p>
             <div className={style.techSkils}>
                 <h1>Tech Skils:</h1>
-                <p><SiJavascript /> <IoLogoHtml5 /> <FaCss3Alt /> <IoLogoReact /> <RiNextjsFill /> <FaNodeJs /> <SiExpress /> <BiLogoPostgresql /> <SiSequelize /> <BiLogoJava /> <SiPython /> <SiMongodb /></p>
+                <p><SiJavascript /> <IoLogoHtml5 /> <FaCss3Alt /> <IoLogoReact /> <RiNextjsFill /> <FaNodeJs /> <SiExpress /> <BiLogoPostgresql /> <SiSequelize /> <FaGit/> <SiTypescript/> <BiLogoJava /> <SiPython /> <SiMongodb /></p>
             </div>
             <div className={style.techSkilsMob}>
                 <h1>Tech Skils:</h1>
-                <p><SiJavascript /> <IoLogoHtml5 /> <FaCss3Alt /> <IoLogoReact /> <RiNextjsFill /> <FaNodeJs /></p>
-                <p><SiExpress /> <BiLogoPostgresql /> <SiSequelize /> <BiLogoJava /> <SiPython /> <SiMongodb /></p>
+                <p><SiJavascript /> <IoLogoHtml5 /> <FaCss3Alt /> <IoLogoReact /> <RiNextjsFill /> <FaNodeJs /> <FaGit/></p>
+                <p><SiExpress /> <BiLogoPostgresql /> <SiSequelize /> <SiTypescript/> <BiLogoJava /> <SiPython /> <SiMongodb /></p>
             </div>
         </section>
     )

@@ -9,21 +9,20 @@
     border-right: 2px var(--fuente-claro) solid;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     z-index: 100;
 }
 
-.logo{
+.logo {
     padding: 8px;
 }
 
-.containerList{
+.containerList {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 20px;
-    height: 80%;
     justify-content: space-around;
+    gap: 15px;
 }
 
 .sub {
@@ -38,7 +37,7 @@
     display: flex;
 }
 
-.sub a{
+.sub a {
     align-self: center;
 }
 
@@ -60,42 +59,71 @@
     transform-origin: bottom left;
 }
 
+.menu__Mobile {
+    display: none;
+}
+
+.Open__Menu {
+    display: none;
+}
+
 @media (max-width: 500px) {
-    .nav{
+    .nav {
         height: 4rem;
         width: 100%;
         display: flex;
         flex-direction: row;
-        border-bottom: 2px var(--fuente-claro) solid;
+        /* border-bottom: 2px var(--fuente-claro) solid; */
         border-right: 0;
         z-index: 100;
+        justify-content: space-between;
     }
 
-    .containerList{
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        padding: 0;
-        gap: 25px;
-        margin-right: 1rem;
+    .containerList {
+        display: none;
     }
 
-    .sub{
+    .menu__Mobile {
+        display: grid;
+        font-size: 3rem;
+        height: 100%;
+        place-items: center;
+        margin-right: 13px;
+        cursor: pointer;
+        z-index: 400;
+        color: var(--fuente-claro);
+    }
+
+    .Open__Menu {
+        z-index: 200;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.85);
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center; 
+        color: var(--fuente-claro);
+    }
+
+    .sub {
         writing-mode: initial;
-        transform:none;
-        font-size: 1rem;
+        transform: none;
+        font-size: 2rem;
         padding-bottom: 0;
-
+        display: block;
+        text-align: center;
+        margin: 1rem;
     }
 
-    .logo{
+    .logo {
         padding: 2px;
     }
 
-    .logo img{
+    .logo img {
         width: 100%;
         height: 100%;
     }
+
     .sub:before {
         content: "";
         position: absolute;
@@ -108,7 +136,7 @@
         background: currentColor;
         transition: transform 0.25s ease-out;
     }
-    
+
     .sub:hover:before {
         transform: scaleX(1);
         transform-origin: bottom left;
@@ -121,4 +149,3 @@
         height: 4rem;
     }
 } */
-

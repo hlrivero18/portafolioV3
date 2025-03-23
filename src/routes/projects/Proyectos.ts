@@ -13,7 +13,7 @@ const proyectos: ProyectosInterface[] = [
     },
     {
         nombre: "PokeApp(2023)",
-        descripcion: "PokeApp es una SPA desarrollada con React que permite buscar y filtrar información sobre Pokémon, consumiendo datos de un backend y una base de datos propia. El proyecto incluye características como búsqueda por nombre, filtros por tipo y paginación.<br/> Tecnologías: React, CSS, React Router, Redux, Express, Sequelize y PostgreSQL.<br/>Este fue mi primer proyecto con React, donde aprendí sobre el manejo de estado y el consumo de APIs.",
+        descripcion: "PokeApp es una SPA desarrollada con React que permite buscar y filtrar información sobre Pokémon, consumiendo datos de un backend y una base de datos propia. El proyecto incluye búsqueda por nombre, filtros por tipo y paginación.<br/> Tecnologías: React, CSS, React Router, Redux, Express, Sequelize y PostgreSQL.",
         img: pokeImg,
         url: "https://pokemon-omega-three.vercel.app/"
     },

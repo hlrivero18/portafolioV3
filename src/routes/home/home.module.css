@@ -76,13 +76,14 @@
 }
 
 @media (max-width: 848px) {
-  .container{
+  /* .container{
     margin: 0;
-  }
+
+  } */
   .containerList{
     position: initial;
     height: auto;
-    margin: 2rem;
+    margin-top: 1rem;
     z-index: 80;
   }
 
@@ -97,16 +98,20 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
+  .container{
+    margin: 0;
+  }
   .logo img{
     transform: scale(1.9);
   }
 
   .titulo{
     text-align: center;
+    font-size: 3.5rem;
   }
   .presentacion{
-    padding: 1rem;
+    margin: auto;
   }
 
 }
