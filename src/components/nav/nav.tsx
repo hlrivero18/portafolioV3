@@ -31,7 +31,7 @@ export default function Nav() {
                     <Link to="/certifications">Certificaciones</Link>
                 </li>
                 <li className={`${style.sub}`}>
-                    <Link to="">Experiencia</Link>
+                    <Link to="/experience">Experiencia</Link>
                 </li>
             </ul>
             {/* version mobile */}
@@ -54,7 +54,7 @@ export default function Nav() {
                         <Link to="/certifications" onClick={openMenu}>Certificaciones</Link>
                     </li>
                     <li className={`${style.sub}`}>
-                        <Link to="" onClick={openMenu}>Experiencia</Link>
+                        <Link to="/experience" onClick={openMenu}>Experiencia</Link>
                     </li>
                 </ul>
             </div>}

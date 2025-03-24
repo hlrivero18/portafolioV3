@@ -11,7 +11,7 @@ function Project() {
             <section className={style.containerCard}>
                 {proyectos.map((proyecto, index) => {
                     return (
-                        <div key={index} className={style.card}>
+                        <div key={index} className={ `${style.card} ${index % 2 == 0 ? style.fadeRight : style.fadeLeft}`}>
                             <figure className={style.card__img}>
                                 <a target="_blank" href={proyecto.url}>
                                    <img src={proyecto.img} alt="" /> 
