@@ -1,0 +1,77 @@
+.container{
+    margin-left: 4rem;
+    height: auto;
+    padding: 0 19px;
+    background-color: var(--fondo-oscuro);
+    z-index: 200;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.header ul{
+  align-self: center;
+}
+
+.header ul li{
+  font-family: "Lora", serif;
+  margin: 5px;
+}
+
+.header ul li:hover{
+  color: var(--fuente-verde);
+}
+
+.titulo {
+    font-size: 2.5rem;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    z-index: 50;
+    position: relative;
+  }
+  
+  .titulo span {
+    color: var(--fuente-verde);
+    cursor: pointer;
+  }
+
+
+  .rrss{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .rrss svg{
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  .rrss svg:hover{
+    color: var(--fuente-verde);
+  }
+
+  .reservado{
+    font-family: "Lora", serif;
+    align-self: end;
+  }
+
+  @media (max-width: 500px){
+    .container{
+      margin-left: 0;
+    }
+    .titulo{
+      font-size: 1.5rem;
+    }
+    .header{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+    .header ul{
+      display: none;
+    }
+  }

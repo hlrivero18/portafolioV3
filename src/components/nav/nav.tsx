@@ -1,5 +1,5 @@
 import style from "./nav.module.css"
-import logo from "../../../public/img/logo.png"
+import logo from "../../../public/img/logoNav.png"
 import { Link } from "react-router-dom"
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useState } from "react"

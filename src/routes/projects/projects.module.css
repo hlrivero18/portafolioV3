@@ -1,6 +1,7 @@
 .container {
     margin-left: 4rem;
     padding: 3rem;
+    overflow-x: hidden;
 }
 
 .logo {
