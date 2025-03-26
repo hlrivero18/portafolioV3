@@ -19,7 +19,7 @@ function Home() {
             <a target="_blank" href="https://www.linkedin.com/in/hector-luis-rivero-311578260/">LinkedIn</a>
           </li>
           <li>
-            <a target="_blank" href="hectorluisrivero14@gmail.com">Gmail</a>
+            <a target="_blank" href="mailto:hectorluisrivero14@gmail.com">Gmail</a>
           </li>
           <li>
             <a target="_blank" href="https://github.com/hlrivero18">Github</a>
