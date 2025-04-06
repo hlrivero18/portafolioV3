@@ -3,13 +3,24 @@
     padding: 4rem;
 }
 
-.logo {
-    position: fixed;
-    opacity: 30%;
-    width: 100%;
-    height: 100%;
+.aboutMe{
     display: grid;
-    place-content: center;
+    grid-template-rows: auto 1fr;
+    gap: 2rem;
+}
+
+.info{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.info figure{
+    width: 170px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid var(--fuente-verde);
 }
 
 .titulo {
@@ -30,13 +41,12 @@
     color: var(--fuente-verde);
 }
 
-.description{
+.description {
     font-family: "Lora", serif;
-    margin-top: 2rem;
-    width: 60%;
+    max-width: 40rem;
 }
 
-.description::first-letter {
+.description::first-letter{
     font-size: 3em; 
     line-height: 1;
     margin-left: 30px; 
@@ -82,9 +92,7 @@
 }
 
 @media (max-width: 848px){
-    .description{
-        width: 18rem;
-    }
+    
     .techSkilsMob{
         display: none;
     }
@@ -93,7 +101,15 @@
 @media (max-width: 500px) {
     .container{
         margin: 0;
-        padding: 6rem 2rem;
+        padding: 6rem 1rem;
+    }
+    .info{
+        flex-direction: row-reverse;
+        gap: 1rem;
+    }
+    .info figure{
+        width: auto;
+        height: 140px;
     }
     .description{
         width: auto;
