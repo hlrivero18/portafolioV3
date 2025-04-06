@@ -37,7 +37,7 @@
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 36ch;
+  width: 40ch;
   margin: auto;
 
   animation: typing 2s steps(43), blink .5s infinite step-end alternate;
