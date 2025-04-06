@@ -1,7 +1,6 @@
 import style from "./footer.module.css"
 import marca from "./img/marca.png"
 import { FaLinkedin, FaTelegram, FaGithub } from "react-icons/fa"
-import { Link } from "react-router-dom"
 function Footer() {
     return (
         <footer className={style.container}>
@@ -12,19 +11,16 @@ function Footer() {
                 </div>
                 <ul>
                     <li>
-                        <Link to="/">Inicio.</Link>
+                        <a href="https://www.figma.com/design/N4fA3LVl9YgOvvNnAppCtZ/New-Portafolio?node-id=0-1&p=f&t=GhQxwnoTNMGsXQMs-0" target="_blank">Figma.</a>
                     </li>
                     <li>
-                        <Link to="/aboutme">Acerca de mi.</Link>
+                        <a href="https://github.com/hlrivero18/portafolioV3" target="_blank">Repositorio.</a>
                     </li>
                     <li>
-                        <Link to="/proyect">Proyectos.</Link>
+                        <a href="https://portafolio-v2-blue.vercel.app/" target="_blank">PortafolioV2.</a>
                     </li>
                     <li>
-                        <Link to="/certifications">Certificaciones.</Link>
-                    </li>
-                    <li>
-                        <Link to="/experience">Experiencias.</Link>
+                        <a href="https://web-portafolio-sigma.vercel.app/" target="_blank">PortafolioV1.</a>
                     </li>
                 </ul>
                 <div>
@@ -33,8 +29,8 @@ function Footer() {
                     </figure>
                     <div className={style.rrss}>
                         <a target="_blank" href="https://www.linkedin.com/in/hector-luis-rivero-311578260/"><FaLinkedin /></a>
-                        <a target="_blank" href="https://t.me/Mrsalitre"><FaTelegram /></a> 
-                        <a target="_blank" href="https://github.com/hlrivero18"><FaGithub /></a> 
+                        <a target="_blank" href="https://t.me/Mrsalitre"><FaTelegram /></a>
+                        <a target="_blank" href="https://github.com/hlrivero18"><FaGithub /></a>
                     </div>
                 </div>
             </div>
