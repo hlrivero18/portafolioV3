@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# 🌐 Portafolio Héctor Rivero V3.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portafolio personal de desarrollador web y soporte técnico, creado con Vite + React + TypeScript. Aquí muestro mis proyectos, experiencia y un poco sobre mí.
 
-Currently, two official plugins are available:
+## ⚙️ Requisitos del Sistema
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Asegúrate de tener Node.js y npm instalados en tu máquina antes de ejecutar el proyecto.
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clona el repositorio desde GitHub:
 
-- Configure the top-level `parserOptions` property like this:
+   ```bash
+   git clone https://github.com/hlrivero18/portafolioV3.git
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. Navega al  directorio del proyecto:
+    ```bash
+    cd portafolioV3
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Instala las dependencias:
+    ```bash
+    npm install
+4. Arranca el proyecto:
+   ```bash
+    npm run dev
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📁 Estructura del Proyecto
+- /public: contiene los archivos publicos del proyecto.
+- /src: Contiene el código fuente del proyecto.
+   -  /Components: Componentes reutilizables.
+    - /routes: Página principal y rutas.
+    - /interface: interfaces para el uso de objetos.
+
+## 🚀 Tecnologías
+
+- ⚛️ React + TypeScript
+- ⚡ Vite
+- 🎨 CSS Modules
+- 📁 Arquitectura modular por rutas y componentes
+
+
+## 💻 Visualización en Línea
+-  El proyecto está desplegado, puedes acceder a él [aquí](https://portafolio-v3-sigma.vercel.app/)
+
+## ⛲ Fuentes
+
+- [Diseño figma](https://www.figma.com/design/N4fA3LVl9YgOvvNnAppCtZ/New-Portafolio?node-id=16-53&t=Suj91dazGbl9Ub7y-0)
+- [Portafolio V1](https://web-portafolio-sigma.vercel.app/)
+- [Portafolio v2](https://portafolio-v2-blue.vercel.app/) 
